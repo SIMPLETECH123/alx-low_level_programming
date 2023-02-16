@@ -1,9 +1,12 @@
-#!/bin/bash
-include <stdio.h>
+include < stdio.h >
 
-/* C program that prints exactly with proper grammar, but the outcome is a piece of art,, followed by a new line*/
-int main()
+/**
+ * main - a program that print a line with printf
+ *
+ * Return: 0 (success)
+ */
+int main(void)
 {
 	printf("with proper grammar, but the outcome is a piece of art,"\n);
-	return 0;
+	return (0);
 }
