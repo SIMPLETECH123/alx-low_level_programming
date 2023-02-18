@@ -6,7 +6,7 @@
  */
 int main(void)
 {
-	char hexa[] = "0123456abcdef";
+	char hexa[] = "0123456789abcdef";
 
 	int a;
 
