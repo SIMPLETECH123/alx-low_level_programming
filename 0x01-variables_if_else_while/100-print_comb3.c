@@ -6,22 +6,23 @@
  */
 int main(void)
 {
-	int f = '0';
+	int f = 0;
 
-	int s = '0';
+	int s;
 
-	for (f = '0'; f <= '9'; f++)
+	for (f = 0; f <= 9; f++)
 	{
-		for (s = '0'; s <= '9'; s++)
+		for (s = f + 1; s <= 9; s++)
 		{
-			if (!((f == s) || (f > s)))
-			{
-				putchar(f);
-				putchar(s);
-				putchar(',');
-				putchar(' ');
-			}
+			putchar(f + '0');
+			putchar(s + '0');
+				if (!(f == 8 && s == 9))
+				{
+					putchar(',');
+					putchar(' ');
+				}
 		}
 	}
+	putchar('\n');
 	return (0);
 }
