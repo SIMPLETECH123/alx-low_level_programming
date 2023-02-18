@@ -6,9 +6,13 @@
  */
 int main(void)
 {
-	char c;
+	char alp[26] = "abcdefghijklmnopqrstuvwxyz"
+	int i;
 
-	for (c =(int)'a'; c <= (int)'z'; ++c)
-	putchar("%c/n", c);
+	for (i = 0, i < 26; i++)
+	{
+		putchar(alp[i]);
+	}
+	putchar('\n');
 	return (0);
-i}
+}
