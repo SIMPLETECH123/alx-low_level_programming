@@ -6,22 +6,13 @@
  */
 int main(void)
 {
+	char hexa[] = "0123456abcdef";
+
 	int a;
 
-	char b;
-
-	a = 0;
-	b = 'a';
-	while
-		(a < 10);
+	for (a = 0; a < 16; a++)
 	{
-		putchar(a + '0');
-	}
-	while
-		(b <= 'f');
-	{
-		putchar(b);
-		b++;
+		putchar(hexa[a]);
 	}
 	putchar('\n');
 	return (0);
