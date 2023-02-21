@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * main - lowercase of the alphabelt followed by a new line
  *
@@ -7,7 +8,7 @@
 int main(void)
 {
 	int a;
-	
+
 	for (a = 'a'; a <= 'z'; a++)
 	{
 		putchar(a);
