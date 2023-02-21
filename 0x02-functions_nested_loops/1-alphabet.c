@@ -13,8 +13,5 @@ void print_alphabelt(void)
 	{
 		_putchar(a);
 	}
-		
-	_putchar('\n');
-		
-	return (0);
+		_putchar('\n');
 }
