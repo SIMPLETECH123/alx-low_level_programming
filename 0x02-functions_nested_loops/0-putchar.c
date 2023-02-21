@@ -1,10 +1,11 @@
-#include "main.h"
+#include <stdio.h>
 
 /**
  * main - a program that print a line followed by a new line
  *
  * Return: 0 always(success)
  */
+
 int main(void)
 {
 	putchar(95);
