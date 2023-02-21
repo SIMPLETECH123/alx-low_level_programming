@@ -3,9 +3,9 @@
 /**
  * print_alphabelt - lowercase of the alphabelt followed by a new line
  *
- * Return: void
+ * Return: always 0.
  */
-void print_alphabet(void)
+void print_alphabelt(void)
 {
 	int a;
 
@@ -13,5 +13,8 @@ void print_alphabet(void)
 	{
 		_putchar(a);
 	}
+		
 	_putchar('\n');
+		
+	return (0);
 }
