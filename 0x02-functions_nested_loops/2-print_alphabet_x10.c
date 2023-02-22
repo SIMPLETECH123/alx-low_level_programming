@@ -1,21 +1,19 @@
 #include <stdio.h>
 /**
- * main - print alphabelt 10 times
+ * print_alphabet_x10 - print alphabelt 10 times
  *
  * Return: 0 always(success)
  */
-int main(void)
+void print_alphabet_x10(void)
 {
-	int i, b = 'z', c = 'a':: ;
-	for (i = 0; i <= 10; i++)
+	int i, b;
+
+	for (i = 0; i < 10; i++)
 	{
-		while (c <= b) {
-			putchar(c);
-			putchar(i);
-			c++;
-			
+		for (b = 97; b <= 122; b++)
+		{
+			_putchar(b);
 		}
-		putchar('\n');
+		_putchar('\n');
 	}
-	return (0);
 }

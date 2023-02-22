@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_alphabelt - lowercase of the alphabelt followed by a new line
+ * print_alphabet - lowercase of the alphabelt followed by a new line
  *
  * Return: always 0.
  */
