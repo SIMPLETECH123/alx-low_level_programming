@@ -9,5 +9,8 @@
  */
 int add(int a, int b)
 {
-	return (a + b);
+	int n = a + b;
+
+	printf("%d", n);
+	return (0);
 }
