@@ -7,11 +7,9 @@
  */
 void print_alphabelt(void)
 {
-	int a;
+	char i;
 
-	for (a = 'a'; a <= 'z'; a++)
-	{
-		_putchar(a);
-	}
-		_putchar('\n');
+	for (i ='a'; i <= 'z'; i++)
+		_putchar(i);
+	_putchar('\n');
 }
