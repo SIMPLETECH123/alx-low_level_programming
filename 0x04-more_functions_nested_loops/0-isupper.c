@@ -5,6 +5,7 @@
  * @c: input character
  * Return: if upper case amd 0 if any other
  */
+
 int _isupper(int c)
 {
 	if (c == 65 && c <= 90)
