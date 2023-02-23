@@ -5,17 +5,19 @@
  *
  * Return: no return
  */
-void more_numbers(void);
+void more_numbers(void)
 {
 	int c;
 
-	for (c = 1; c <= 14; c++)
+	int i;
+
+	for (c = 1; c <= 10; c++)
 	{
-		for (i = '0'; i <= '14'; i++)
+		for (i = 0; i < 15; i++)
 		{
 			if (i >= 10)
 				_putchar((i / 10) + '0');
-				_putchar((i % 10) + '0');
+			_putchar((i % 10) + '0');
 		}
 		_putchar('\n');
 	}
