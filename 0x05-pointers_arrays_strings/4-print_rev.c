@@ -8,12 +8,14 @@
 
 void print_rev(char *s)
 {
-	int i = 0;
+	int len;
 
-	while (s[i] != '0')
-		i++;
-	for (i = i - 1; i >= 0; i--)
-		_putchar(s[i]);
-
+	for (len = 0; s[len] != '\0'; len++)
+	{
+	}
+	for (len = len - 1; len >= 0; len--)
+	{
+		_putchar(s[len]);
+	}
 	_putchar('\n');
 }
