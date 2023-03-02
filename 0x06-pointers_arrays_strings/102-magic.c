@@ -3,7 +3,9 @@
 int main(void)
 {
 	int n;
-	inta[5];
+
+	int [5];
+
 	int *p;
 
 	a[2] = 1024;
