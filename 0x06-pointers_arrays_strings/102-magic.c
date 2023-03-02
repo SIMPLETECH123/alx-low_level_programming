@@ -3,9 +3,7 @@
 int main(void)
 {
 	int n;
-
 	int [5];
-
 	int *p;
 
 	a[2] = 1024;
