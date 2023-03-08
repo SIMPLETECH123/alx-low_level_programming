@@ -7,10 +7,12 @@
  */
 int _sqrt_recursion(int n)
 {
-	if ((n / 2) * (n / 2) == n && (n / 2) > 0)
-		return (n / 2);
+	int i = n / 2;
+
+	if (i * i == n && i > 0)
+		return (i);
 	else
 		return (-1);
-	(n / 2)--;
-	return (_sqrt_recursion(n / 2));
+	i--;
+	return (_sqrt_recursion(n));
 }
