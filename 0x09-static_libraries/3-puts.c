@@ -1,11 +1,5 @@
 #include "main.h"
-/**
- * _puts - function that prints
- * @s: the string
- */
-void _puts(char *s)
-{}
-
+void _puts(char *str)
 #include<stdio.h>
 /**
  * main - Entry point
