@@ -12,10 +12,9 @@
 int main(int argc, char *argv[])
 {
 	int a, b, mul;
-	char c[] = "Error";
 
 	if (argc < 2)
-		printf("%s\n", c);
+		printf("Error\n");
 
 	a = atoi(argv[1]);
 	b = atoi(argv[2]);
