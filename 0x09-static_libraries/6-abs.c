@@ -1,9 +1,10 @@
 #include "main.h"
-
 /**
- * _abs - computes the absolute value of an integer
- * @n: the int to check
- * Return: the absolute value of int
+ * _abs - compute the absolute value of an integer
+ *
+ * @n: input number as an intege
+ *
+ * Return: absolute value
  */
 int _abs(int n)
 {
@@ -11,5 +12,8 @@ int _abs(int n)
 	{
 		return (n);
 	}
-	return (-n);
+	else
+	{
+		return (n * -1);
+	}
 }

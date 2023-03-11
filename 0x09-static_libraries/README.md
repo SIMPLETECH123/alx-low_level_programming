@@ -1,1 +1,1 @@
-static library
+#!/bin/bash
