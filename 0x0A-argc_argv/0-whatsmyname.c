@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
  * main - a pprogram that prints its name
- * Return: 0 always 
+ * Return: 0 always
  */
 int main(argc, *argv)
 {
