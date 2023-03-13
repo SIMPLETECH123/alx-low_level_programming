@@ -22,6 +22,5 @@ char *create_array(unsigned int size, char c)
 		p[i] = c;
 	}
 	p[i] = '\0';
-	free(p);
 	return (p);
 }
