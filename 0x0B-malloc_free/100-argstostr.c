@@ -1,6 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 /**
  * argstostr - function that concatenate all arguements
@@ -29,11 +30,11 @@ char *argstostr(int ac, char **av)
 	m = 0;
 	for (k = 0; k < ac; k++)
 	{
-		for (l = 0; av[k][l] != '\0'; l++)
+		for (l = 0; av[k][l] == '\0'; l++)
 		{
-			p[m] = av[k][l];
-			m++;
+			p[m++] = av[k][l];
 		}
+		p[m++] = '\n';
 	}
 	p[m] = '\0';
 	return (p);
