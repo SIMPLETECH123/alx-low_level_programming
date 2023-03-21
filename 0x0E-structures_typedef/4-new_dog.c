@@ -10,7 +10,7 @@
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *d;
-	int i, j;
+	int i, j, k, l;
 
 	d = malloc(sizeof(dog_t));
 	if (d == NULL)
@@ -24,19 +24,15 @@ dog_t *new_dog(char *name, float age, char *owner)
 	/*allocate space for the srtings*/
 	while (owner[j] != '\0')
 		j++;
-	name = malloc((sizeof(char) * i) + 1);
-	if (name == NULL)
+	d->name = malloc(sizeof(char) * i);
+	if (d->name == NULL)
 		return (NULL);
-	owner = malloc((sizeof(char) * j) + 1);
-	if (owner == NULL)
+	d->owner = malloc(sizeof(char) * j);
+	if (d->owner == NULL)
 		return (NULL);
-	i = 0;
-	while (name[i] != '\0')
-		name[i] = ((*d).name)[i];
-	j = 0;
-	while (owner[j] != '\0')
-		owner[j] = ((*d).owner)[j];
-	d->owner = "bob";
-	d->name = "poppy";
+	for (k = 0; k < i; k++)
+		d->name[k] = name[k];
+	for (l = 0; l < i; l++)
+		d->owner[l] = owner[l];
 	return (d);
 }
