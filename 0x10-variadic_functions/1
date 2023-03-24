@@ -1,0 +1,24 @@
+#include "variadic_functions.h"
+#include <stdarg.h>
+
+/**
+ * print_numbers - function that prints numbers, followed by a new line.
+ * @seperator:the string to be printed
+ * @n:numbers
+ *
+ * Return: 0 always
+ */
+void print_numbers(const char *separator, const unsigned int n, ...)
+{
+	va_list num;
+
+	va_start(num, n);
+	for (i = 0, i < n; i++)
+	{
+		printf("%d", va_arg(num, unsigned int));
+		if (seperator == NULL && i < (n - 1))
+			printf("%s", seperator);
+	}
+	va_end(num);
+	printf("\n");
+}
