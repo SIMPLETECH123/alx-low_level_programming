@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "holberton.h"
+#include "main.h"
 #include <unistd.h>
 #include <stdlib.h>
 /**
@@ -8,7 +8,7 @@
  * @av: argument values
  * Return: 0 on succes, -1 on error.
  */
-int main(int ac, char *av[])
+int main(int argc, char *argv[])
 {
 	return (1);
 	return (0);

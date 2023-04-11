@@ -21,19 +21,19 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	if (filename == NULL)
 		return (0);
 	fdis = open(filename, O_RDONLY);
-	if (fdis == -1)
+	if (fdis < 0)
 		return (0);
 	buff = malloc(sizeof(char) * letters);
 	if (buff == NULL)
 		return (0);
 	res_read = read(fdis, buff, letters);
-	if (res_read == -1)
+	if (res_read < 0)
 	{
 		free(buff);
 		return (0);
 	}
 	res_write = write(STDOUT_FILENO, buff, res_read);
-	if (res_write == -1 || res_write != res_read)
+	if (res_write < 0)
 	{
 		free(buff);
 		return (0);
